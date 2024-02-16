@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: canary-demo
-          image: docker.io/vadimkharincodefresh/rollouts-demo:green
+          image: docker.io/vadimkharincodefresh/rollouts-demo:red
           imagePullPolicy: Always
           ports:
             - name: http

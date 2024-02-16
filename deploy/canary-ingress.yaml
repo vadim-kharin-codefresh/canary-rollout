@@ -8,13 +8,13 @@ metadata:
 spec:
   ingressClassName: nginx-public
   rules:
-  - host: vadym-demo-canary.rnd.sandbox.codefresh.io
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: canary-demo
-            port:
-              name: http
+    - host: dionysus-vadim-demo.rnd.sandbox.codefresh.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: canary-demo
+                port:
+                  name: http
